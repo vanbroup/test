@@ -20,6 +20,17 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: Type of guideline proposed
+      options:
+        - Final Guideline
+        - Final Maintenance Guideline
+    validations:
+      required: true
+
   - type: input
     id: proposedBy
     attributes:
