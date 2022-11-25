@@ -6,16 +6,25 @@ body:
   - type: markdown
     attributes:
       value: |
-        Using this form you can propose a ballot. 
+        Using this form you can propose a ballot.
 
         For more information about how to create a ballot, please read the following guidelines:
         * [General Provisions Applicable to All Ballots](https://github.com/cabforum/forum/blob/main/Bylaws.md#23-general-provisions-applicable-to-all-ballots)
         * [Requirements for Draft Guideline Ballots](https://github.com/cabforum/forum/blob/main/Bylaws.md#24-requirements-for-draft-guideline-ballots)
 
   - type: textarea
-    id: description
+    id: purpose
     attributes:
       label: Purpose of the ballot
+      description:
+      placeholder:
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
       description:
       placeholder:
     validations:
