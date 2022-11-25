@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Email Lists
+    url: https://cabforum.org/email-lists/
+    about: The CA/Browser Forum has several public mailing lists, intended to be used for normal CA/Browser Forum discussions.
+  - name: Bylaws
+    url: https://cabforum.org/bylaws/
+    about: 
+  - name: IPR Policy
+    url: https://cabforum.org/ipr-policy/
+    about: 
