@@ -18,7 +18,7 @@ body:
   - type: checkboxes
     id: terms
     attributes:
-      label: 
+      label: Agreement
       options:
         - label: I'm a member of the CA/Browser Forum
           required: true
