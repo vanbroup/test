@@ -1,0 +1,58 @@
+name: New ballot
+description: Create a new ballot
+title: "XXNN Name of ballot"
+labels: ["ballot"]
+assignees:
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Using this form you can request 
+        
+        [General Provisions Applicable to All Ballots](https://github.com/cabforum/forum/blob/main/Bylaws.md#23-general-provisions-applicable-to-all-ballots)
+        [Requirements for Draft Guideline Ballots](https://github.com/cabforum/forum/blob/main/Bylaws.md#24-requirements-for-draft-guideline-ballots)
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Purpose of the ballot
+      description:
+      placeholder:
+    validations:
+      required: true
+
+  - type: input
+    id: proposedBy
+    attributes:
+      label: Proposed by
+      description: Name and affiliation
+      placeholder: 
+    validations:
+      required: true
+
+  - type: input
+    id: endoresedBy1
+    attributes:
+      label: First endorsement 
+      description: Name and affiliation
+      placeholder: 
+    validations:
+      required: false
+      
+  - type: input
+    id: endoresedBy2
+    attributes:
+      label: Second endorsement 
+      description: Name and affiliation
+      placeholder: 
+    validations:
+      required: false
+      
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Agreement
+      description: Only members of the CA/Browser forum are authoritzed to create a ballot.
+      options:
+        - label: I'm a member of the CA/Browser forum and declare that I'm familiar with the bylaws and the policies of the forum.
+          required: true
