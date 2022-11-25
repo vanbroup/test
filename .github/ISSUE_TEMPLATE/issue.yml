@@ -1,0 +1,27 @@
+name: New issue
+description: Create a new issue
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please note that only members of the CA/Browsers forum are authorized to create and comment on issues.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description:
+      placeholder:
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Agreement
+      description: Only members of the CA/Browser forum are authoritzed to create a ballot.
+      options:
+        - label: I'm a member of the CA/Browser Forum
+          required: true
+        - label: We have agreed to the Bylaws, Code of Conduct and IPR policy
+          required: true
